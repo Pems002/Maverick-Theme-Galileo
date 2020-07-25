@@ -16,6 +16,12 @@ html {
     background: #fff;
 }
 
+@media (prefers-color-scheme: dark) {
+    html {
+        background: #000;
+    }
+}
+
 body {
     color: $black;
     font-family: $ga-font-sans;
