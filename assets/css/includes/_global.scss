@@ -11,10 +11,21 @@ Global elements
         width: 100%;
         position: absolute;
         height: 2px;
-        background: rgba(0,0,0,.05);
+        background: #000000d9;
         left: 0;
-        bottom: -3rem;
-    }
+        bottom: -3rem; 
+	}
+	@media (prefers-color-scheme: dark) {
+		&::before {
+			content: "";
+			width: 100%;
+			position: absolute;
+			height: 2px;
+			background: #ffffffd9;
+			left: 0;
+			bottom: -3rem; 
+		}
+	}
     @media screen and (max-width: $mainWidth) {
         &::before {
             width: calc(100% + 40px);
@@ -55,7 +66,27 @@ Global elements
                 color: $faded-black-light;
                 font-weight: 300;
             }
-            
+        }
+        @media (prefers-color-scheme: dark) {
+                aside#ga-brand {
+            flex: 1;
+            h1 {
+                font-size: 1.95rem;
+                margin-top: 0;
+                margin-bottom: 0.5rem;
+                a {
+                    color: #ffffffd9;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+            p {
+                margin: 0;
+                line-height: 1.35;
+                color: #9E9E9E;
+                font-weight: 300;
+            }
+        }
         }
     }
     div[second] {
@@ -87,6 +118,36 @@ Global elements
                 border: none
             }
         }
+		@media (prefers-color-scheme: dark) {
+			nav {
+				font-size: 1.1rem;
+				// &.social-links {
+				//     font-size: 0.9rem;
+				//     display: none;
+				// }
+				.separator {
+					display: inline-block;
+					margin: 0 8px;
+				}
+				ul {
+					margin: 0;
+					margin-top: 1.5rem;
+					list-style: none;
+					padding: 0;
+					white-space: nowrap;
+					overflow-x: auto;
+					overflow-y: hidden;
+					li {
+						display: inline;
+					}
+				}
+				a {
+					color: #ffffffd9;
+					text-decoration: none;
+					border: none
+				}
+			}
+		}
     }
 }
 
