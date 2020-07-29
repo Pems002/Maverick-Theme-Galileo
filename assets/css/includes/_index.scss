@@ -71,6 +71,11 @@
                 a {
                     color: $black;
                 }
+				@media (prefers-color-scheme: dark) {
+				    a {
+						color: #f7f7f7;
+					}
+				}
                 footer {
                     display: flex;
                     flex-direction: row;
@@ -78,20 +83,26 @@
                     font-size: 0.95rem;
                 }
                 span.ga-read_more::before {
-                    content: "→ ";
+                    content: "-> ";
                     font-family: $ga-font-mono;
                 }
                 time {
-                    color: $faded-black-light;
-                    font-size: 0.85rem;
+                    color: #333333;
+                    font-size: 0.9rem;
                     white-space: nowrap;
                     &::before {
-                        content: "/* ";
+                        content: "- ";
                     }
                     &::after {
-                        content: " */";
+                        content: " -";
                     }
                 }
+				@media (prefers-color-scheme: dark) {
+					time {
+						color: #f7f7f7;
+						}
+					}
+				}
             }
         }
     }
@@ -134,6 +145,11 @@
                     font-size: 1rem;
                     border-bottom: 2px solid rgba($color: $yellow, $alpha: 0.45);
                 }
+				@media (prefers-color-scheme: dark) {
+					a {
+						border-bottom: 2px solid #4caf50;
+					}
+				}
             }
         }
     }
