@@ -10,20 +10,14 @@ Global elements
         content: "";
         width: 100%;
         position: absolute;
-        height: 2px;
-        background: #000000d9;
+        height: 1px;
+        background: #000000;
         left: 0;
         bottom: -3rem; 
 	}
 	@media (prefers-color-scheme: dark) {
 		&::before {
-			content: "";
-			width: 100%;
-			position: absolute;
-			height: 2px;
 			background: #ffffffd9;
-			left: 0;
-			bottom: -3rem; 
 		}
 	}
     @media screen and (max-width: $mainWidth) {
@@ -63,30 +57,22 @@ Global elements
             p {
                 margin: 0;
                 line-height: 1.35;
-                color: $faded-black-light;
+                color: #333333;
                 font-weight: 300;
             }
         }
         @media (prefers-color-scheme: dark) {
-                aside#ga-brand {
+           aside#ga-brand {
             flex: 1;
             h1 {
-                font-size: 1.95rem;
-                margin-top: 0;
-                margin-bottom: 0.5rem;
                 a {
                     color: #ffffffd9;
-                    text-decoration: none;
-                    display: block;
                 }
             }
             p {
-                margin: 0;
-                line-height: 1.35;
                 color: #9E9E9E;
-                font-weight: 300;
             }
-        }
+		  }
         }
     }
     div[second] {
@@ -120,31 +106,8 @@ Global elements
         }
 		@media (prefers-color-scheme: dark) {
 			nav {
-				font-size: 1.1rem;
-				// &.social-links {
-				//     font-size: 0.9rem;
-				//     display: none;
-				// }
-				.separator {
-					display: inline-block;
-					margin: 0 8px;
-				}
-				ul {
-					margin: 0;
-					margin-top: 1.5rem;
-					list-style: none;
-					padding: 0;
-					white-space: nowrap;
-					overflow-x: auto;
-					overflow-y: hidden;
-					li {
-						display: inline;
-					}
-				}
 				a {
 					color: #ffffffd9;
-					text-decoration: none;
-					border: none
 				}
 			}
 		}
@@ -224,18 +187,23 @@ Global elements
 #ga-footer {
     font-size: 0.95rem;
     line-height: $contentLineHeight;
-    color: $faded-black;
+    color: #ffffffd9;
     section:first-child {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: 1px solid $faded-black-light;
+        border: 1px solid #000000;
         border-left: none;
         border-right: none;
-        margin-bottom: .5rem;
-        font-size: 0.8rem;
-        padding: 0.2rem 0;
+        margin-bottom: 0.55rem;
+        font-size: 0.85rem;
+        padding: 0.3rem 1px;
     }
+	@media (prefers-color-scheme: dark) {
+		section:first-child {
+			border: 1px solid #ffffffd9;
+		}
+	}
     section:nth-child(2) {
         p {
             margin: 0.05rem 0;
@@ -267,6 +235,13 @@ Global elements
                 text-decoration: none;
             }
         }
+		@media (prefers-color-scheme: dark) {
+			li {
+				a {
+					color: #ffffffd9;
+				}
+			}
+		}
     }
 }
 
