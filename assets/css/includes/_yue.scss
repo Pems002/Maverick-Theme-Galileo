@@ -17,10 +17,10 @@
   .yue ::-moz-selection {
     background-color: #2196F3;
   }
-  
   .yue ::selection {
     background-color: #2196F3;
   }
+
   .yue h1,
   .yue h2,
   .yue h3,
@@ -63,6 +63,11 @@
     background: rgba($color: $yellow, $alpha: 0.05);
     margin-bottom: 1.24em;
   }
+  @media (prefers-color-scheme: dark) {
+	.yue .notice {
+		background: #545454a6;
+	}
+  }
   .yue a {
     word-wrap: break-word;
     color: $black;
@@ -74,7 +79,6 @@
 		border-bottom: 2px solid #4caf50;
 	}
   }
-
   .yue .dplayer-menu .dplayer-menu-item a {
       border: none;
       background: none;
