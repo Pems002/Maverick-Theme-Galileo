@@ -188,11 +188,6 @@ Global elements
     font-size: 0.95rem;
     line-height: $contentLineHeight;
     color: #333333;
-	@media (prefers-color-scheme: dark) {
-	#ga-footer {
-    color: #ffffffd9;
-		}
-	}
     section:first-child {
         display: flex;
         flex-direction: row;
@@ -248,6 +243,11 @@ Global elements
 			}
 		}
     }
+}
+@media (prefers-color-scheme: dark) {
+	#ga-footer {
+    color: #ffffffd9;
+		}
 }
 
 :not(.dplayer) a.ga-highlight {
