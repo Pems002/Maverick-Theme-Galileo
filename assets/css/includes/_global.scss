@@ -187,10 +187,10 @@ Global elements
 #ga-footer {
     font-size: 0.95rem;
     line-height: $contentLineHeight;
-    color: #ffffffd9;
+    color: #333333;
 	@media (prefers-color-scheme: dark) {
 	#ga-footer {
-    color: #333333;
+    color: #ffffffd9;
 		}
 	}
     section:first-child {
