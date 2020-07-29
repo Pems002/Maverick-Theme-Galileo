@@ -15,11 +15,14 @@
   }
 
   .yue ::-moz-selection {
-    background-color: $yellow;
+    background-color: #2196F3;
   }
   
   .yue ::selection {
-    background-color: $yellow;
+    background-color: #2196F3;
+  }
+  @media (prefers-color-scheme: dark) {
+  
   }
   .yue h1,
   .yue h2,
@@ -68,6 +71,11 @@
     color: $black;
     border-bottom: 2px solid rgba($color: $yellow, $alpha: 0.45);
     @include a-highlight()
+  }
+  @media (prefers-color-scheme: dark) {
+    .yue a {
+		border-bottom: 2px solid #4caf50;
+	}
   }
 
   .yue .dplayer-menu .dplayer-menu-item a {
@@ -169,6 +177,11 @@
       font: 700 58px/1 "Droid Serif",serif;
       color: rgba(0,0,0,.1);
     }
+  }
+  @media (prefers-color-scheme: dark) {
+	.yue blockquote {
+		color: #f7f7f7;
+	}
   }
   .yue ul,
   .yue ol {
