@@ -83,7 +83,7 @@
                     font-size: 0.95rem;
                 }
                 span.ga-read_more::before {
-                    content: "-> ";
+                    content: "▶ ";
                     font-family: $ga-font-mono;
                 }
                 time {
@@ -135,7 +135,7 @@
                 line-height: $contentLineHeight;
                 position: relative;
                 &::before {
-                    content: "→ ";
+                    content: "-> ";
                     position: absolute;
                     left: -1.5rem;
                     font-family: $ga-font-mono;
